@@ -14,6 +14,8 @@ cd manjaro-base
 ./setup.sh
 ```
 
+![](cast.gif)
+
 For the changes to take full effect, log out of cinnamon and then log back in.
 
 ## Packages Installed
