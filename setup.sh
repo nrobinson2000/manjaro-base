@@ -3,7 +3,7 @@
 # setup.sh
 # Script for replicating my Manjaro Cinnamon setup
 
-echo "Installng packages..."
+echo "Installing packages..."
 sudo pacman-mirrors --country United_States
 sudo pacman -Syyu --noconfirm base-devel yay vim plank adapta-gtk-theme albert muparser chromium
 
