@@ -8,6 +8,7 @@ sudo pacman-mirrors --country United_States
 sudo pacman -Syyu --noconfirm base-devel yay vim plank adapta-gtk-theme albert muparser
 
 # Copy autostart apps
+mkdir -p "$HOME/.config/autostart"
 APPS="$(find apps/ | tail +2)"
 for app in $APPS; do
     cp "$app" "$HOME/.config/autostart"
@@ -21,3 +22,6 @@ done
 
 # Apply dconf settings
 dconf load / < manjaro-blade.conf
+
+# Copy albert.conf
+install -D albert.conf "$HOME/.config/albert/albert.conf"
