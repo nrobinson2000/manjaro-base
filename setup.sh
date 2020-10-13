@@ -5,7 +5,7 @@
 
 # Install Packages
 sudo pacman-mirrors --country United_States
-sudo pacman -Syyu --noconfirm base-devel yay vim plank adapta-gtk-theme albert muparser
+sudo pacman -Syyu --noconfirm base-devel yay vim plank adapta-gtk-theme albert muparser chromium
 
 # Copy autostart apps
 mkdir -p "$HOME/.config/autostart"
