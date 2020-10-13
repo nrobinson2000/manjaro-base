@@ -18,3 +18,6 @@ DOTFILES="$(find dotfiles/ | tail +2)"
 for file in $DOTFILES; do
     cp "$file" "$HOME"
 done
+
+# Apply dconf settings
+dconf load / < manjaro-blade.conf
